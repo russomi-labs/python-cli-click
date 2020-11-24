@@ -69,6 +69,23 @@ poetry run pytest
 
 ```
 
+## Loading Yaml
+
+``` python
+
+>>> import yaml
+>>> yaml.load("""
+... - step one
+... - step two:
+...   - step 2.1
+...   - step 2.2
+...   - step 2.3
+... - step three
+... """)
+
+['step one', {'step two': ['step 2.1', 'step 2.2', 'step 2.3']}, 'step three']
+```
+
 ## References
 
 - [How to Write Python Command-Line Interfaces like a Pro](https://towardsdatascience.com/how-to-write-python-command-line-interfaces-like-a-pro-f782450caf0d)
