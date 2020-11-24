@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "python-cli-poc"
+name = "cli-tutorial"
 version = "0.1.0"
 description = "A proof of concept of creating a python based cli to automate tasks based on a manifest.yaml"
 authors = ["Michael Russo <russo.mail@gmail.com>"]
@@ -24,4 +24,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 cli-script = 'cli_tutorial.cli:process'
-poetry = 'poetry.console:run'
+
