@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "cli-tutorial"
+version = "0.1.0"
+description = "A proof of concept of creating a python based cli to automate tasks based on a manifest.yaml"
+authors = ["Michael Russo <russo.mail@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+funcy = "^1.15"
+click = "^7.1.2"
+anyconfig = "^0.9.11"
+PyYAML = "^5.3.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.4"
+mypy = "^0.790"
+black = {version = "^20.8b1", allow-prereleases = true}
+pytest = "^6.1.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+cli-script = 'cli_tutorial.cli:process'
+
